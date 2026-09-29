@@ -1,0 +1,62 @@
+@page "/about"
+@inject ContentService Data
+
+<PageTitle>Who am I? &middot; anonimzwx</PageTitle>
+
+@{ var about = Data.About(); }
+
+<h1 class="wm section sy">Who am I?</h1>
+<div class="ln"></div>
+<p class="lead headline">@about.Headline</p>
+
+@foreach (var p in about.Intro)
+{
+    <p class="prose">@p</p>
+}
+
+@if (about.Highlights.Count > 0)
+{
+    <section class="group">
+        <h2 class="group-title sy"><i>01</i> What I've done</h2>
+        <ul class="bullets">
+            @foreach (var h in about.Highlights)
+            {
+                <li>@h</li>
+            }
+        </ul>
+    </section>
+}
+
+@if (about.Skills.Count > 0)
+{
+    <section class="group">
+        <h2 class="group-title sy"><i>02</i> Tech I use</h2>
+        @foreach (var g in about.Skills)
+        {
+            <div class="skill">
+                <b class="sy">@g.Group</b>
+                <ul class="tags">
+                    @foreach (var i in g.Items)
+                    {
+                        <li>@i</li>
+                    }
+                </ul>
+            </div>
+        }
+    </section>
+}
+
+@if (about.Links.Count > 0)
+{
+    <section class="group">
+        <h2 class="group-title sy"><i>03</i> Links</h2>
+        @foreach (var l in about.Links)
+        {
+            <a class="row" href="@l.Url" target="_blank" rel="noopener noreferrer">
+                <i>&#9679;</i>
+                <b class="sy">@l.Label</b>
+                <span>Open <em>&rarr;</em></span>
+            </a>
+        }
+    </section>
+}

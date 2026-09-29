@@ -1,0 +1,12 @@
+<a class="row" href="@Href">
+    <i>@Index</i>
+    <b class="sy">@Label</b>
+    <span>@Hint <em>&rarr;</em></span>
+</a>
+
+@code {
+    [Parameter, EditorRequired] public string Index { get; set; } = "";
+    [Parameter, EditorRequired] public string Label { get; set; } = "";
+    [Parameter] public string Hint { get; set; } = "";
+    [Parameter, EditorRequired] public string Href { get; set; } = "";
+}

@@ -1,0 +1,63 @@
+[
+  // Same format as unity.json. Put your files in wwwroot/media/snes/ and reference them like "media/snes/boss.mp4".
+  {
+    "title": "SMWRR X",
+    "description": "A boss rush whose bosses push the console far past what looks possible on SNES, in the spirit of Metal Slug.",
+    "tags": ["ASM", "Boss rush"],
+    "media": []
+  },
+  {
+    "title": "SMWRR FB (First Blood)",
+    "description": "A full hack with levels, bosses and level select, built on pre-rendered graphics from DKC, SM64 and more.",
+    "tags": ["ASM", "Full hack", "Pre-rendered"],
+    "media": []
+  },
+  {
+    "title": "Pseudo 3D painting hub",
+    "description": "A pseudo 3D corridor where you pick levels by walking into paintings, Mario 64 style.",
+    "tags": ["ASM", "Level select"],
+    "media": []
+  },
+  {
+    "title": "Powerups & progression",
+    "description": "A Super Metroid style powerup and progression system.",
+    "tags": ["ASM", "Systems"],
+    "media": []
+  },
+  {
+    "title": "Dracula",
+    "description": "Boss for Castlemania II.",
+    "tags": ["Boss", "ASM", "Collaboration"],
+    "media": []
+  },
+  {
+    "title": "Sigma (MMX4)",
+    "description": "Boss for Heckin Spoop.",
+    "tags": ["Boss", "ASM", "Collaboration"],
+    "media": []
+  },
+  {
+    "title": "Sigma (MMX2)",
+    "description": "Boss for Lessner World 2.",
+    "tags": ["Boss", "ASM", "Collaboration"],
+    "media": []
+  },
+  {
+    "title": "Rediscover SMW bosses",
+    "description": "Much harder versions of the original bosses.",
+    "tags": ["Boss", "ASM", "Collaboration"],
+    "media": []
+  },
+  {
+    "title": "Arbitrium final boss",
+    "description": "Final boss for Arbitrium (WIP).",
+    "tags": ["Boss", "ASM", "Collaboration", "WIP"],
+    "media": []
+  },
+  {
+    "title": "Super Boo",
+    "description": "Boss for an upcoming kaizo hack.",
+    "tags": ["Boss", "ASM", "Collaboration", "Kaizo"],
+    "media": []
+  }
+]

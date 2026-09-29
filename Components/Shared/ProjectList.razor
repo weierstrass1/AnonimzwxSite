@@ -1,0 +1,27 @@
+<h1 class="wm section sy">@Title</h1>
+<div class="ln"></div>
+<p class="lead">@Lead</p>
+
+@if (Projects.Count == 0)
+{
+    <p class="hint">Nothing here yet.</p>
+}
+else
+{
+    <div class="grid">
+        @foreach (var p in Projects)
+        {
+            <ProjectCard Item="p" />
+        }
+    </div>
+}
+
+<a class="cta sy" href="contact?interest=@Interest">Request a commission <em>&rarr;</em></a>
+
+@code {
+    [Parameter, EditorRequired] public string Title { get; set; } = "";
+    [Parameter] public string Lead { get; set; } = "";
+    [Parameter, EditorRequired] public List<Project> Projects { get; set; } = [];
+    /// <summary>"unity" or "snes": preselects the interest in the contact form.</summary>
+    [Parameter] public string Interest { get; set; } = "";
+}

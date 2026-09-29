@@ -1,0 +1,133 @@
+[
+  {
+    "title": "Classroom Simulator",
+    "description": "",
+    "tags": [ "Unity", "3D", "PC", "VR", "Education", "Photon Fusion" ],
+    "media": [
+      {
+        "Src": "media/unity/VR_ Kyon's Classroom.mp4"
+      }
+    ]
+  },
+  {
+    "title": "Statverse: Experience 1",
+    "description": "",
+    "tags": [ "Unity", "VR", "Education" ],
+    "media": [
+      {
+        "Src": "media/unity/Stateverse1.mp4"
+      }
+    ]
+  },
+  {
+    "title": "Statverse: Experience 2",
+    "description": "",
+    "tags": [ "Unity", "VR", "Education" ],
+    "media": [
+      {
+        "Src": "media/unity/Stateverse2.mp4"
+      }
+    ]
+  },
+  {
+    "title": "Statverse: Experience 3",
+    "description": "",
+    "tags": [ "Unity", "VR", "Education" ],
+    "media": [
+      {
+        "Src": "media/unity/Stateverse3.mp4"
+      }
+    ]
+  },
+  {
+    "title": "Statverse: Experience 4",
+    "description": "",
+    "tags": [ "Unity", "VR", "Education" ],
+    "media": [
+      {
+        "Src": "media/unity/Stateverse4.mp4"
+      }
+    ]
+  },
+  {
+    "title": "UTFSM Digital Clone: Dance Wheel",
+    "description": "",
+    "tags": [ "Unity", "3D", "Photon Fusion" ],
+    "media": [
+      {
+        "Src": "media/unity/Unity Dance Wheel.mp4"
+      }
+    ]
+  },
+  {
+    "title": "UTFSM Digital Clone: Emote Wheel",
+    "description": "",
+    "tags": [ "Unity", "3D", "Photon Fusion" ],
+    "media": [
+      {
+        "Src": "media/unity/Unity Emoji Wheel.mp4"
+      }
+    ]
+  },
+  {
+    "title": "UTFSM Digital Clone: NPC and Dialogues",
+    "description": "",
+    "tags": [ "Unity", "3D", "Photon Fusion" ],
+    "media": [
+      {
+        "Src": "media/unity/Unity NPC and Dialogues.mp4"
+      }
+    ]
+  },
+  {
+    "title": "Vegan Zombies: Kraken Boss",
+    "description": "",
+    "tags": [ "Unity", "2D", "Platform" ],
+    "media": [
+      {
+        "Src": "media/unity/Vegan Zombies_ Elevator Advance.mp4"
+      }
+    ]
+  },
+  {
+    "title": "Dimensional Blend",
+    "description": "",
+    "tags": [ "Unity", "2D", "Shoot em' Up" ],
+    "media": [
+      {
+        "Src": "media/unity/Game Jam 2015_ Dimension Blend.mp4"
+      }
+    ]
+  },
+  {
+    "title": "Arrow Roulette",
+    "description": "",
+    "tags": [ "Unity", "2D" ],
+    "media": [
+      {
+        "Src": "media/unity/Arrow Roulette.mp4"
+      }
+    ]
+  },
+  {
+    "title": "Redbanc Trivia",
+    "description": "",
+    "tags": [ "Unity", "2D" ],
+    "media": [
+      {
+        "Src": "media/unity/Redbanc Trivia.mp4"
+      }
+    ]
+  },
+  {
+    "title": "Soviet Roulette",
+    "description": "",
+    "tags": [ "Unity", "2D" ],
+    "media": [
+      {
+        "Src": "media/unity/Soviet Roulette.mp4"
+      }
+    ]
+  }
+
+]

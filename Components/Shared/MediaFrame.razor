@@ -1,0 +1,29 @@
+@using AnonimzwxSite.Services
+
+<div class="crt">
+    <div class="crt-screen">
+        @if (string.IsNullOrWhiteSpace(Src))
+        {
+            <div class="crt-empty sy">Media soon</div>
+        }
+        else if (MediaHelper.YouTubeId(Src) is { } id)
+        {
+            <div class="yt" data-id="@id">
+                <img src="https://i.ytimg.com/vi/@id/hqdefault.jpg" alt="Video thumbnail" loading="lazy" />
+                <button type="button" class="play" aria-label="Play video">&#9654;</button>
+            </div>
+        }
+        else if (MediaHelper.IsVideoFile(Src))
+        {
+            <video src="@Src" autoplay muted loop playsinline preload="metadata"></video>
+        }
+        else
+        {
+            <img src="@Src" alt="" loading="lazy" />
+        }
+    </div>
+</div>
+
+@code {
+    [Parameter] public string? Src { get; set; }
+}

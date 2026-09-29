@@ -1,0 +1,56 @@
+{
+  // Edit any text here. Refresh the browser to see changes (no rebuild needed).
+  "headline": "Unity Developer & SNES ROM Hacker",
+
+  "intro": [
+    "I'm a Unity developer with experience building both 2D and 3D projects. I've worked on a wide range of systems, from RPG mechanics, platformers, and shoot 'em ups to complete 3D experiences for PC and VR.",
+    "I have also developed VR applications for PC and Meta Quest, including interactive 3D experiences with custom systems, visual effects, and gameplay mechanics.",
+    "Whether you need a specific Unity system, a complete gameplay feature, or help bringing an idea to life, I'm available for commissions and custom development.",
+    "I'm the creator of Super Mario World Random Revolution: First Blood and Random Revolution X, projects focused on pushing Super Mario World's engine and the SNES hardware to their limits.",
+    "I've developed complex gameplay systems, custom sprites, mechanics, graphics systems, and highly detailed bosses inspired by games such as Donkey Kong Country and Metal Slug. My work often involves taking ideas that seem impractical on the SNES and finding a way to make them actually work.",
+    "From custom bosses and enemies to entirely new systems running underneath Super Mario World, I specialize in turning ambitious ideas into working SNES code."
+  ],
+
+  "highlights": [
+    "Build 2D and 3D Unity experiences, from gameplay mechanics to complete applications.",
+    "Develop PC VR and Meta Quest applications with interactive 3D environments and custom systems.",
+    "Create gameplay systems, mechanics, controllers, UI, interactions, and other core features.",
+    "Implement online multiplayer and real-time interaction using Photon Fusion.",
+    "Build REST APIs, SQL databases, and Unity integrations for data-driven applications.",
+    "Develop complete RPG systems including dialogue, cinematics, interactions, and gameplay mechanics.",
+    "Create complex bosses and enemies with custom behaviors, attack patterns, and AI.",
+    "Develop interactive simulations and digital twins of real-world environments.",
+    "Build gameplay systems for shoot 'em ups, platformers, and other 2D games.",
+    "Create interactive educational experiences for PC, VR, and other platforms."
+  ],
+
+  "skills": [
+    {
+      "group": "Unity",
+      "items": [ "C#", "VR", "Meta Quest", "2D and 3D games", "Multiplayer", "Databases", "APIs", "DB Integration with Unity", "Photon Fusion" ]
+    },
+    {
+      "group": "SNES",
+      "items": [ "ASM", "Super Mario World", "Dynamic sprites", "Custom bosses", "Custom sprites", "Complex systems", "Players", "UberASM", "Patches" ]
+    }
+  ],
+
+  "links": [
+    {
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/patricio-diaz-parada"
+    },
+    {
+      "label": "X/Twitter",
+      "url": "https://x.com/anonimzwx"
+    },
+    {
+      "label": "YouTube",
+      "url": "https://www.youtube.com/@anonimzwx"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/weierstrass1"
+    }
+  ]
+}

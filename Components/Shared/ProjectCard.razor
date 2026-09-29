@@ -1,0 +1,32 @@
+<article class="card">
+    <div class="strip">
+        @if (Item.Media.Count == 0)
+        {
+            <MediaFrame />
+        }
+        else
+        {
+            @foreach (var m in Item.Media)
+            {
+                <MediaFrame Src="@m.Src" />
+            }
+        }
+    </div>
+    <div class="card-body">
+        <h3 class="sy">@Item.Title</h3>
+        <p>@Item.Summary</p>
+        @if (Item.Tags.Count > 0)
+        {
+            <ul class="tags">
+                @foreach (var t in Item.Tags)
+                {
+                    <li>@t</li>
+                }
+            </ul>
+        }
+    </div>
+</article>
+
+@code {
+    [Parameter, EditorRequired] public Project Item { get; set; } = default!;
+}

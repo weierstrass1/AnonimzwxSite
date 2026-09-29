@@ -1,0 +1,99 @@
+@page "/contact"
+@rendermode InteractiveServer
+@inject ContactMailer Mailer
+
+<PageTitle>Contact &middot; anonimzwx</PageTitle>
+
+<h1 class="wm section sy">Contact</h1>
+<div class="ln"></div>
+<p class="lead">Job offers, commissions, or just want to know more? Send me a message.</p>
+
+@if (_state == SendState.Sent)
+{
+    <div class="notice ok">Message sent. I'll get back to you soon.</div>
+}
+else
+{
+    <EditForm Model="_model" OnValidSubmit="SendAsync" class="form">
+        <DataAnnotationsValidator />
+
+        <label>Name
+            <InputText @bind-Value="_model.Name" autocomplete="name" />
+            <ValidationMessage For="() => _model.Name" />
+        </label>
+
+        <label>Email
+            <InputText @bind-Value="_model.Email" type="email" autocomplete="email" />
+            <ValidationMessage For="() => _model.Email" />
+        </label>
+
+        <label>Discord username (optional)
+            <InputText @bind-Value="_model.Discord" />
+            <ValidationMessage For="() => _model.Discord" />
+        </label>
+
+        <label>Interest
+            <InputSelect @bind-Value="_model.Interest">
+                @foreach (var i in ContactMessage.Interests)
+                {
+                    <option value="@i">@i</option>
+                }
+            </InputSelect>
+        </label>
+
+        <label class="wide">Message
+            <InputTextArea @bind-Value="_model.Message" rows="7" />
+            <ValidationMessage For="() => _model.Message" />
+        </label>
+
+        <div class="hp" aria-hidden="true">
+            <label>Website <InputText @bind-Value="_model.Website" tabindex="-1" autocomplete="off" /></label>
+        </div>
+
+        <div class="wide">
+            <button type="submit" class="cta sy" disabled="@(_state == SendState.Sending)">
+                @(_state == SendState.Sending ? "Sending..." : "Send message") <em>&rarr;</em>
+            </button>
+        </div>
+
+        @if (_state == SendState.Error)
+        {
+            <div class="notice err wide">Something went wrong sending your message. Please try again in a moment.</div>
+        }
+    </EditForm>
+}
+
+@code {
+    enum SendState { Idle, Sending, Sent, Error }
+
+    [SupplyParameterFromQuery(Name = "interest")] public string? Interest { get; set; }
+
+    readonly ContactMessage _model = new();
+    SendState _state = SendState.Idle;
+
+    protected override void OnInitialized()
+    {
+        _model.Interest = Interest?.ToLowerInvariant() switch
+        {
+            "snes" => "SNES commission",
+            "job" => "Job offer",
+            _ => "Unity commission"
+        };
+    }
+
+    async Task SendAsync()
+    {
+        if (!string.IsNullOrEmpty(_model.Website)) { _state = SendState.Sent; return; } // bot
+
+        _state = SendState.Sending;
+        try
+        {
+            await Mailer.SendAsync(_model);
+            _state = SendState.Sent;
+        }
+        catch
+        {
+            _state = SendState.Error;
+        }
+    }
+}
